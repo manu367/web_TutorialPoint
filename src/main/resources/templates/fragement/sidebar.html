@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:fragment="sidebar">
+    <ul class="nav flex-column mt-4">
+        <li class="nav-item">
+            <a th:class="${active == 'admin'} ? 'nav-link text-black nav-link-sidebar nav-link-sidebar-active p-3 mt-3 mb-3' : 'nav-link text-black nav-link-sidebar p-3 mt-3 mb-3'" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a th:class="${active == 'event'} ? 'nav-link text-black nav-link-sidebar nav-link-sidebar-active p-3 mt-3 mb-3' : 'nav-link text-black nav-link-sidebar p-3 mt-3 mb-3'" href="#">Events</a>
+        </li>
+        <li class="nav-item">
+            <a th:class="${active == 'edit_page'} ? 'nav-link text-black nav-link-sidebar nav-link-sidebar-active p-3 mt-3 mb-3' : 'nav-link text-black nav-link-sidebar p-3 mt-3 mb-3'" href="#">Edit pages</a>
+        </li>
+        <li class="nav-item">
+            <a th:class="${active == 'course'} ? 'nav-link text-black nav-link-sidebar nav-link-sidebar-active p-3 mt-3 mb-3' : 'nav-link text-black nav-link-sidebar p-3 mt-3 mb-3'" href="#">Courses</a>
+        </li>
+        <li class="nav-item">
+            <a th:class="${active == 'video_course'} ? 'nav-link text-black nav-link-sidebar nav-link-sidebar-active p-3 mt-3 mb-3' : 'nav-link text-black nav-link-sidebar p-3 mt-3 mb-3'" href="#">Video Courses</a>
+        </li>
+        <li class="nav-item">
+            <a th:class="${active == 'manage_course'} ? 'nav-link text-black nav-link-sidebar nav-link-sidebar-active p-3 mt-3 mb-3' : 'nav-link text-black nav-link-sidebar p-3 mt-3 mb-3'" href="#">Manage Courses</a>
+        </li>
+        <li class="nav-item">
+            <a th:class="${active == 'projects'} ? 'nav-link text-black nav-link-sidebar nav-link-sidebar-active p-3 mt-3 mb-3' : 'nav-link text-black nav-link-sidebar p-3 mt-3 mb-3'" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a th:class="${active == 'services'} ? 'nav-link text-black nav-link-sidebar nav-link-sidebar-active p-3 mt-3 mb-3' : 'nav-link text-black nav-link-sidebar p-3 mt-3 mb-3'" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+            <a th:class="${active == 'articales'} ? 'nav-link text-black nav-link-sidebar nav-link-sidebar-active p-3 mt-3 mb-3' : 'nav-link text-black nav-link-sidebar p-3 mt-3 mb-3'" href="#">Articals</a>
+        </li>
+        <li class="nav-item">
+            <a th:class="${active == 'message'} ? 'nav-link text-black nav-link-sidebar nav-link-sidebar-active p-3 mt-3 mb-3' : 'nav-link text-black nav-link-sidebar p-3 mt-3 mb-3'" href="#">Messages</a>
+        </li>
+        <li class="nav-item">
+            <a th:class="${active == 'job'} ? 'nav-link text-black nav-link-sidebar nav-link-sidebar-active p-3 mt-3 mb-3' : 'nav-link text-black nav-link-sidebar p-3 mt-3 mb-3'" href="#">jobs</a>
+        </li>
+        <li class="nav-item">
+            <a th:class="${active == 'profile'} ? 'nav-link text-black nav-link-sidebar nav-link-sidebar-active p-3 mt-3 mb-3' : 'nav-link text-black nav-link-sidebar p-3 mt-3 mb-3'" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a th:class="${active == 'login'} ? 'nav-link text-black nav-link-sidebar nav-link-sidebar-active p-3 mt-3 mb-3' : 'nav-link text-black nav-link-sidebar p-3 mt-3 mb-3'" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+            <a th:class="${active == 'logout'} ? 'nav-link text-black nav-link-sidebar nav-link-sidebar-active p-3 mt-3 mb-3' : 'nav-link text-black nav-link-sidebar p-3 mt-3 mb-3'" href="#">Logout</a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
